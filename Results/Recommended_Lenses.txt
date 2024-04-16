@@ -2,25 +2,26 @@ Data set: Recommended_Lenses
 	 Training model ...
 	
 Rule set:
-			(1) (astigmatism == no) && (tear-prod-rate == normal) => (contact-lenses == soft)	{coverage: 0.263, accuracy: 1.0}
-			(2) (tear-prod-rate == normal) => (contact-lenses == hard)	{coverage: 0.474, accuracy: 0.222}
-			(3) (astigmatism == no) && (tear-prod-rate == reduced) => (contact-lenses == none)	{coverage: 0.316, accuracy: 1.0}
-			(4) (tear-prod-rate == reduced) => (contact-lenses == none)	{coverage: 0.526, accuracy: 1.0}
-			(5) (astigmatism == yes) && (tear-prod-rate == normal) => (contact-lenses == none)	{coverage: 0.211, accuracy: 0.5}
+			(1) (astigmatism == yes) && (tear-prod-rate == normal) => (contact-lenses == none)	{coverage: 0.211, accuracy: 0.25}
+			(2) (astigmatism == no) && (tear-prod-rate == reduced) => (contact-lenses == none)	{coverage: 0.316, accuracy: 1.0}
+			(3) (astigmatism == yes) && (tear-prod-rate == reduced) => (contact-lenses == none)	{coverage: 0.211, accuracy: 1.0}
+			(4) (astigmatism == yes) && (tear-prod-rate == normal) => (contact-lenses == hard)	{coverage: 0.211, accuracy: 0.75}
+			(5) (astigmatism == no) && (tear-prod-rate == normal) => (contact-lenses == soft)	{coverage: 0.263, accuracy: 0.8}
+			(6) (astigmatism == no) && (tear-prod-rate == normal) => (contact-lenses == none)	{coverage: 0.263, accuracy: 0.2}
 		Test instances with assigned classes:
-			(1) Attributes: {'age': 'presbyopic', 'spectacle-prescrip': 'myope', 'astigmatism': 'yes', 'tear-prod-rate': 'normal'},
+			(1) Attributes: {'age': 'young', 'spectacle-prescrip': 'myope', 'astigmatism': 'yes', 'tear-prod-rate': 'normal'},
 Real class: hard,
 Predicted class: none
-			(2) Attributes: {'age': 'pre-presbyopic', 'spectacle-prescrip': 'myope', 'astigmatism': 'yes', 'tear-prod-rate': 'reduced'},
+			(2) Attributes: {'age': 'pre-presbyopic', 'spectacle-prescrip': 'hypermetrope', 'astigmatism': 'yes', 'tear-prod-rate': 'reduced'},
 Real class: none,
 Predicted class: none
-			(3) Attributes: {'age': 'presbyopic', 'spectacle-prescrip': 'myope', 'astigmatism': 'no', 'tear-prod-rate': 'normal'},
-Real class: none,
+			(3) Attributes: {'age': 'young', 'spectacle-prescrip': 'myope', 'astigmatism': 'no', 'tear-prod-rate': 'normal'},
+Real class: soft,
 Predicted class: soft
-			(4) Attributes: {'age': 'young', 'spectacle-prescrip': 'myope', 'astigmatism': 'yes', 'tear-prod-rate': 'normal'},
-Real class: hard,
+			(4) Attributes: {'age': 'presbyopic', 'spectacle-prescrip': 'hypermetrope', 'astigmatism': 'yes', 'tear-prod-rate': 'normal'},
+Real class: none,
 Predicted class: none
 			(5) Attributes: {'age': 'presbyopic', 'spectacle-prescrip': 'myope', 'astigmatism': 'yes', 'tear-prod-rate': 'reduced'},
 Real class: none,
 Predicted class: none
-		Test accuracy: 0.4
+		Test accuracy: 0.8

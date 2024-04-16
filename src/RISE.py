@@ -491,28 +491,17 @@ def replace_missing_values(data_frame):
     return data_frame
 
 
-def normalize_numeric_columns(data_frame):
-    """ Normalize numeric columns and return the dataframe along with the min and max values used for scaling. """
-    scaler = MinMaxScaler()
-    numeric_columns = get_numeric_column_names(data_frame)
-    min_max_values = {}
-    
-    for column in numeric_columns:
-        original_data = data_frame[[column]].dropna()
-        scaler.fit(original_data)
-        data_frame[column] = scaler.transform(data_frame[[column]])
-        min_max_values[column] = (scaler.data_min_, scaler.data_max_)
-    
-    return data_frame, min_max_values
 
-def undo_normalize_numeric_columns(data_frame, min_max_values):
-    """ Undo the normalization using the stored min and max values. """
-    for column, min_max in min_max_values.items():
-        min_val, max_val = min_max
-        # Apply the inverse transformation formula
-        data_frame[column] = data_frame[column] * (max_val - min_val) + min_val
-    
+def normalize_numeric_columns(data_frame):
+
+    """ Return the passed data frame with the numeric columns normalized with values between 0 and 1"""
+
+    for column in get_numeric_column_names(data_frame):
+
+        data_frame[column] = preprocessing.minmax_scale(data_frame[column])
+
     return data_frame
+
 
 
 

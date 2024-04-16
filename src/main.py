@@ -16,7 +16,7 @@ if __name__ == "__main__":
     
     dataframes = read_data_sets(data_dir_path,data_set_names)
     # pre-process the data sets
-    data_frames,min_max_values = [pre_process_data_frame(data_frame) for data_frame in dataframes]
+    data_frames= [pre_process_data_frame(data_frame) for data_frame in dataframes]
     
     for data_set_name, data_frame in zip(data_set_names, data_frames):
        # prepare the file where to write the results
