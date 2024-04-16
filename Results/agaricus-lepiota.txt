@@ -1,0 +1,2 @@
+Data set: agaricus-lepiota
+	 Training model {}
