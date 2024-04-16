@@ -1,0 +1,1205 @@
+Data set: car
+	 Training model ...
+	
+Rule set:
+			(1) (buying == low) && (maint == low) && (safety == low) => (class == unacc)	{coverage: 0.023, accuracy: 1.0}
+			(2) (buying == high) && (doors == 2) && (safety == med) => (class == unacc)	{coverage: 0.02, accuracy: 0.778}
+			(3) (buying == med) && (maint == med) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.006, accuracy: 0.5}
+			(4) (buying == high) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(5) (buying == high) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.03, accuracy: 1.0}
+			(6) (buying == med) && (maint == med) && (safety == high) => (class == vgood)	{coverage: 0.021, accuracy: 0.379}
+			(7) (maint == vhigh) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.025, accuracy: 1.0}
+			(8) (maint == vhigh) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.032, accuracy: 0.273}
+			(9) (maint == vhigh) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(10) (buying == vhigh) && (doors == 2) && (safety == high) => (class == acc)	{coverage: 0.02, accuracy: 0.25}
+			(11) (maint == high) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(12) (maint == high) && (doors == 2) && (safety == high) => (class == acc)	{coverage: 0.018, accuracy: 0.28}
+			(13) (buying == low) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(14) (maint == high) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.025, accuracy: 0.429}
+			(15) (buying == high) && (maint == med) && (safety == med) => (class == unacc)	{coverage: 0.024, accuracy: 0.636}
+			(16) (buying == high) && (maint == vhigh) && (safety == high) => (class == unacc)	{coverage: 0.017, accuracy: 1.0}
+			(17) (buying == high) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.02, accuracy: 0.222}
+			(18) (buying == med) && (maint == low) && (doors == 2) && (safety == med) => (class == good)	{coverage: 0.004, accuracy: 0.167}
+			(19) (doors == 2) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(20) (doors == 2) && (safety == high) => (class == vgood)	{coverage: 0.077, accuracy: 0.075}
+			(21) (buying == vhigh) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(22) (buying == high) && (maint == low) && (safety == high) => (class == acc)	{coverage: 0.024, accuracy: 0.606}
+			(23) (buying == vhigh) && (maint == med) && (doors == 2) && (safety == med) => (class == unacc)	{coverage: 0.004, accuracy: 0.667}
+			(24) (buying == high) && (maint == vhigh) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(25) (buying == vhigh) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.021, accuracy: 0.103}
+			(26) (buying == low) && (maint == high) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(27) (buying == vhigh) && (maint == med) && (safety == med) => (class == unacc)	{coverage: 0.02, accuracy: 0.667}
+			(28) (maint == high) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(29) (maint == high) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.028, accuracy: 1.0}
+			(30) (buying == low) && (doors == 2) && (safety == med) => (class == good)	{coverage: 0.021, accuracy: 0.069}
+			(31) (buying == med) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.031, accuracy: 1.0}
+			(32) (buying == vhigh) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(33) (buying == med) && (maint == med) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(34) (lug_boot == small) && (safety == med) => (class == acc)	{coverage: 0.118, accuracy: 0.184}
+			(35) (buying == high) && (maint == med) && (safety == low) => (class == unacc)	{coverage: 0.019, accuracy: 1.0}
+			(36) (buying == low) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.021, accuracy: 0.414}
+			(37) (buying == vhigh) && (maint == low) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 0.667}
+			(38) (buying == low) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(39) (buying == med) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.028, accuracy: 0.385}
+			(40) (maint == vhigh) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.025, accuracy: 1.0}
+			(41) (buying == high) && (maint == low) && (safety == med) => (class == acc)	{coverage: 0.02, accuracy: 0.37}
+			(42) (buying == vhigh) && (maint == vhigh) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(43) (doors == 2) && (lug_boot == small) && (safety == high) => (class == good)	{coverage: 0.026, accuracy: 0.056}
+			(44) (buying == high) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.025, accuracy: 1.0}
+			(45) (buying == high) && (maint == vhigh) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 1.0}
+			(46) (buying == high) && (doors == 2) && (safety == high) => (class == acc)	{coverage: 0.019, accuracy: 0.385}
+			(47) (buying == low) && (maint == vhigh) && (safety == high) => (class == acc)	{coverage: 0.02, accuracy: 0.607}
+			(48) (buying == med) && (maint == high) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.387}
+			(49) (maint == vhigh) && (doors == 2) && (safety == med) => (class == unacc)	{coverage: 0.021, accuracy: 0.862}
+			(50) (buying == med) && (maint == vhigh) && (safety == high) => (class == acc)	{coverage: 0.019, accuracy: 0.577}
+			(51) (buying == high) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(52) (buying == vhigh) && (maint == low) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.333}
+			(53) (buying == low) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.029, accuracy: 1.0}
+			(54) (maint == high) && (doors == 2) && (safety == high) => (class == unacc)	{coverage: 0.018, accuracy: 0.64}
+			(55) (buying == high) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.028, accuracy: 0.436}
+			(56) (maint == vhigh) && (safety == high) => (class == unacc)	{coverage: 0.077, accuracy: 0.701}
+			(57) (buying == low) && (lug_boot == small) && (safety == high) => (class == good)	{coverage: 0.029, accuracy: 0.3}
+			(58) (maint == high) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.03, accuracy: 0.854}
+			(59) (buying == low) && (maint == low) && (safety == med) => (class == good)	{coverage: 0.02, accuracy: 0.429}
+			(60) (doors == 2) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(61) (persons == 2) && (lug_boot == small) && (safety == high) => (class == unacc)	{coverage: 0.038, accuracy: 1.0}
+			(62) (buying == med) && (maint == high) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(63) (buying == vhigh) && (maint == high) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(64) (buying == vhigh) && (maint == med) && (safety == med) => (class == acc)	{coverage: 0.02, accuracy: 0.333}
+			(65) (doors == 2) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(66) (buying == low) && (maint == low) && (lug_boot == big) && (safety == high) => (class == vgood)	{coverage: 0.007, accuracy: 0.667}
+			(67) (buying == vhigh) && (maint == vhigh) && (safety == high) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(68) (buying == med) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.028, accuracy: 1.0}
+			(69) (doors == 2) && (safety == high) => (class == acc)	{coverage: 0.077, accuracy: 0.274}
+			(70) (buying == med) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(71) (buying == low) && (maint == vhigh) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(72) (maint == high) && (lug_boot == small) && (safety == med) => (class == acc)	{coverage: 0.03, accuracy: 0.146}
+			(73) (buying == high) && (maint == high) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 0.581}
+			(74) (buying == low) && (maint == high) && (safety == med) => (class == acc)	{coverage: 0.02, accuracy: 0.679}
+			(75) (buying == med) && (maint == low) && (safety == high) => (class == good)	{coverage: 0.022, accuracy: 0.258}
+			(76) (buying == vhigh) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(77) (buying == med) && (maint == high) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 0.613}
+			(78) (persons == 2) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.036, accuracy: 1.0}
+			(79) (buying == med) && (doors == 2) && (safety == high) => (class == acc)	{coverage: 0.019, accuracy: 0.346}
+			(80) (maint == vhigh) && (doors == 2) && (safety == high) => (class == unacc)	{coverage: 0.018, accuracy: 0.76}
+			(81) (maint == vhigh) && (lug_boot == small) && (safety == high) => (class == unacc)	{coverage: 0.032, accuracy: 0.727}
+			(82) (buying == low) && (maint == med) && (safety == med) => (class == good)	{coverage: 0.021, accuracy: 0.276}
+			(83) (buying == high) && (maint == high) && (safety == high) => (class == acc)	{coverage: 0.019, accuracy: 0.577}
+			(84) (buying == med) && (maint == low) && (lug_boot == med) && (safety == med) => (class == acc)	{coverage: 0.007, accuracy: 0.3}
+			(85) (buying == low) && (maint == med) && (safety == high) => (class == good)	{coverage: 0.019, accuracy: 0.308}
+			(86) (buying == high) && (maint == high) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.005, accuracy: 0.286}
+			(87) (buying == low) && (safety == med) => (class == good)	{coverage: 0.081, accuracy: 0.179}
+			(88) (buying == vhigh) && (maint == low) && (safety == low) => (class == unacc)	{coverage: 0.019, accuracy: 1.0}
+			(89) (persons == 2) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.04, accuracy: 1.0}
+			(90) (buying == low) && (maint == vhigh) && (safety == med) => (class == acc)	{coverage: 0.02, accuracy: 0.444}
+			(91) (buying == low) && (maint == high) && (lug_boot == med) && (safety == med) => (class == acc)	{coverage: 0.007, accuracy: 0.7}
+			(92) (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.111, accuracy: 1.0}
+			(93) (buying == med) && (maint == vhigh) && (safety == low) => (class == unacc)	{coverage: 0.019, accuracy: 1.0}
+			(94) (buying == med) && (maint == high) && (safety == high) => (class == acc)	{coverage: 0.02, accuracy: 0.643}
+			(95) (maint == high) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.233}
+			(96) (buying == vhigh) && (maint == med) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(97) (buying == low) && (doors == 2) && (safety == high) => (class == vgood)	{coverage: 0.019, accuracy: 0.192}
+			(98) (buying == vhigh) && (maint == high) && (safety == high) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(99) (buying == vhigh) && (maint == med) && (lug_boot == med) && (safety == med) => (class == acc)	{coverage: 0.005, accuracy: 0.286}
+			(100) (buying == low) && (maint == low) && (safety == high) => (class == vgood)	{coverage: 0.022, accuracy: 0.367}
+			(101) (maint == high) && (doors == 2) && (safety == high) => (class == vgood)	{coverage: 0.018, accuracy: 0.08}
+			(102) (buying == med) && (maint == med) && (safety == med) => (class == acc)	{coverage: 0.024, accuracy: 0.636}
+			(103) (buying == vhigh) && (maint == high) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 1.0}
+			(104) (buying == med) && (maint == vhigh) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.4}
+			(105) (buying == med) && (lug_boot == small) && (safety == med) => (class == acc)	{coverage: 0.032, accuracy: 0.318}
+			(106) (buying == med) && (maint == low) && (safety == high) => (class == vgood)	{coverage: 0.022, accuracy: 0.387}
+			(107) (buying == high) && (maint == med) && (safety == high) => (class == acc)	{coverage: 0.02, accuracy: 0.63}
+			(108) (buying == low) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(109) (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.106, accuracy: 1.0}
+			(110) (buying == vhigh) && (maint == med) && (safety == high) => (class == acc)	{coverage: 0.023, accuracy: 0.625}
+			(111) (maint == vhigh) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(112) (buying == med) && (maint == low) && (safety == med) => (class == good)	{coverage: 0.022, accuracy: 0.367}
+			(113) (maint == high) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(114) (buying == low) && (maint == med) && (safety == low) => (class == unacc)	{coverage: 0.018, accuracy: 1.0}
+			(115) (buying == low) && (maint == low) && (safety == high) => (class == good)	{coverage: 0.022, accuracy: 0.267}
+			(116) (buying == low) && (maint == low) && (doors == 2) && (safety == high) => (class == good)	{coverage: 0.004, accuracy: 0.167}
+			(117) (buying == low) && (maint == high) && (safety == high) => (class == vgood)	{coverage: 0.022, accuracy: 0.4}
+			(118) (buying == low) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.026, accuracy: 1.0}
+			(119) (buying == low) && (maint == med) && (safety == med) => (class == acc)	{coverage: 0.021, accuracy: 0.276}
+			(120) (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.115, accuracy: 0.346}
+			(121) (buying == high) && (maint == high) && (safety == low) => (class == unacc)	{coverage: 0.021, accuracy: 1.0}
+			(122) (buying == low) && (maint == med) && (safety == high) => (class == vgood)	{coverage: 0.019, accuracy: 0.308}
+			(123) (buying == vhigh) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.03, accuracy: 0.293}
+			(124) (buying == vhigh) && (doors == 2) && (safety == med) => (class == unacc)	{coverage: 0.021, accuracy: 0.897}
+			(125) (buying == vhigh) && (maint == low) && (safety == high) => (class == acc)	{coverage: 0.022, accuracy: 0.645}
+			(126) (buying == vhigh) && (maint == vhigh) && (safety == med) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(127) (maint == vhigh) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.029, accuracy: 1.0}
+			(128) (buying == med) && (maint == med) && (safety == high) => (class == acc)	{coverage: 0.021, accuracy: 0.241}
+			(129) (maint == vhigh) && (safety == high) => (class == acc)	{coverage: 0.077, accuracy: 0.299}
+			(130) (maint == high) && (safety == low) => (class == unacc)	{coverage: 0.082, accuracy: 1.0}
+			(131) (doors == 2) && (lug_boot == small) && (safety == med) => (class == acc)	{coverage: 0.029, accuracy: 0.125}
+			(132) (buying == med) && (doors == 2) && (safety == high) => (class == good)	{coverage: 0.019, accuracy: 0.077}
+			(133) (buying == high) && (maint == low) && (safety == low) => (class == unacc)	{coverage: 0.02, accuracy: 1.0}
+			(134) (maint == high) && (doors == 2) && (safety == med) => (class == unacc)	{coverage: 0.022, accuracy: 0.767}
+			(135) (doors == 2) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.029, accuracy: 0.875}
+			(136) (buying == vhigh) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.025, accuracy: 1.0}
+			(137) (maint == vhigh) && (safety == low) => (class == unacc)	{coverage: 0.08, accuracy: 1.0}
+			(138) (buying == med) && (doors == 2) && (safety == high) => (class == vgood)	{coverage: 0.019, accuracy: 0.115}
+			(139) (buying == med) && (maint == low) && (safety == low) => (class == unacc)	{coverage: 0.025, accuracy: 1.0}
+			(140) (buying == vhigh) && (lug_boot == small) && (safety == med) => (class == unacc)	{coverage: 0.029, accuracy: 1.0}
+			(141) (doors == 2) && (safety == high) => (class == good)	{coverage: 0.077, accuracy: 0.047}
+			(142) (buying == vhigh) && (maint == low) && (lug_boot == big) && (safety == high) => (class == acc)	{coverage: 0.008, accuracy: 0.636}
+			(143) (maint == vhigh) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.028, accuracy: 1.0}
+			(144) (buying == low) && (maint == low) && (lug_boot == small) && (safety == high) => (class == good)	{coverage: 0.008, accuracy: 0.545}
+			(145) (maint == vhigh) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.021, accuracy: 0.138}
+			(146) (buying == vhigh) && (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(147) (buying == med) && (lug_boot == small) && (safety == high) => (class == good)	{coverage: 0.028, accuracy: 0.154}
+			(148) (buying == high) && (persons == 2) && (safety == med) => (class == unacc)	{coverage: 0.03, accuracy: 1.0}
+			(149) (buying == high) && (maint == low) && (safety == med) => (class == unacc)	{coverage: 0.02, accuracy: 0.63}
+			(150) (buying == med) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(151) (lug_boot == small) && (safety == low) => (class == unacc)	{coverage: 0.11, accuracy: 1.0}
+			(152) (doors == 2) && (lug_boot == small) && (safety == high) => (class == unacc)	{coverage: 0.026, accuracy: 0.833}
+			(153) (maint == high) && (lug_boot == small) && (safety == high) => (class == unacc)	{coverage: 0.025, accuracy: 0.571}
+			(154) (buying == high) && (maint == med) && (safety == med) => (class == acc)	{coverage: 0.024, accuracy: 0.364}
+			(155) (buying == med) && (doors == 2) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.333}
+			(156) (buying == med) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.029, accuracy: 1.0}
+			(157) (doors == 2) && (lug_boot == small) && (safety == high) => (class == acc)	{coverage: 0.026, accuracy: 0.111}
+			(158) (doors == 2) && (persons == 2) && (safety == high) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(159) (buying == high) && (persons == 2) && (safety == low) => (class == unacc)	{coverage: 0.027, accuracy: 1.0}
+			(160) (maint == high) && (doors == 2) && (safety == low) => (class == unacc)	{coverage: 0.022, accuracy: 1.0}
+			(161) (buying == high) && (maint == high) && (safety == med) => (class == acc)	{coverage: 0.022, accuracy: 0.419}
+		Test instances with assigned classes:
+			(1) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: good,
+Predicted class: good
+			(2) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(3) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: vgood,
+Predicted class: good
+			(4) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(5) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(6) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(7) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(8) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(9) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(10) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(11) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(12) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(13) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(14) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(15) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(16) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(17) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(18) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(19) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(20) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(21) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(22) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(23) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(24) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(25) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(26) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: good
+			(27) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(28) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(29) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(30) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(31) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(32) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(33) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: good,
+Predicted class: unacc
+			(34) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(35) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(36) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(37) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(38) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(39) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(40) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(41) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(42) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(43) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(44) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(45) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(46) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: good
+			(47) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '4', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(48) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: vgood
+			(49) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(50) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(51) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: vgood,
+Predicted class: good
+			(52) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(53) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(54) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(55) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(56) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(57) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(58) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: vgood,
+Predicted class: vgood
+			(59) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(60) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(61) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: good
+			(62) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(63) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '5more', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(64) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(65) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(66) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(67) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(68) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(69) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(70) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(71) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(72) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(73) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(74) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(75) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: good,
+Predicted class: vgood
+			(76) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(77) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(78) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(79) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(80) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(81) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(82) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(83) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(84) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(85) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(86) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(87) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(88) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(89) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(90) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(91) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(92) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(93) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(94) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(95) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(96) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: vgood
+			(97) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(98) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(99) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(100) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(101) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(102) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(103) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(104) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(105) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: acc
+			(106) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(107) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(108) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(109) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(110) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: good
+			(111) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(112) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(113) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(114) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(115) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(116) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(117) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(118) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(119) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(120) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '5more', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(121) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: acc
+			(122) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(123) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(124) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(125) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(126) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(127) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(128) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(129) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(130) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(131) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(132) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(133) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(134) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(135) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(136) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(137) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(138) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(139) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(140) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(141) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(142) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(143) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(144) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(145) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(146) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(147) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(148) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(149) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(150) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: good
+			(151) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(152) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(153) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(154) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(155) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(156) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(157) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(158) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(159) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(160) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: good,
+Predicted class: good
+			(161) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(162) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(163) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(164) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(165) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(166) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(167) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(168) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(169) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(170) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(171) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(172) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(173) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(174) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(175) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(176) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(177) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(178) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(179) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(180) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(181) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: vgood,
+Predicted class: good
+			(182) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(183) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(184) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(185) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(186) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(187) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(188) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(189) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(190) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(191) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(192) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(193) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(194) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(195) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(196) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(197) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(198) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(199) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(200) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(201) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(202) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(203) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(204) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(205) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: vgood
+			(206) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(207) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(208) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(209) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(210) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(211) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(212) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(213) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(214) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(215) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(216) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(217) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: good
+			(218) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(219) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(220) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(221) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(222) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(223) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(224) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(225) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(226) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '5more', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(227) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(228) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(229) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(230) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(231) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(232) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(233) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: vgood
+			(234) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(235) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(236) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(237) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(238) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(239) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(240) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(241) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(242) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(243) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(244) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(245) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(246) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(247) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: vgood
+			(248) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(249) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(250) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: acc
+			(251) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(252) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(253) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(254) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(255) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(256) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: acc
+			(257) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(258) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(259) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(260) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(261) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(262) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(263) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'high'},
+Real class: good,
+Predicted class: good
+			(264) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(265) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(266) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(267) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(268) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(269) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(270) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(271) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: unacc
+			(272) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(273) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(274) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: good,
+Predicted class: vgood
+			(275) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: acc,
+Predicted class: unacc
+			(276) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(277) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(278) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(279) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(280) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '3', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: good
+			(281) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(282) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(283) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'med'},
+Real class: good,
+Predicted class: acc
+			(284) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '2', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(285) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: vgood,
+Predicted class: vgood
+			(286) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(287) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(288) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(289) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(290) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(291) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(292) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(293) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(294) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(295) Attributes: {'buying': 'vhigh', 'maint': 'med', 'doors': '5more', 'persons': '2', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(296) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(297) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(298) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(299) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(300) Attributes: {'buying': 'med', 'maint': 'low', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(301) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(302) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(303) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(304) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '3', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(305) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(306) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '5more', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(307) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(308) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(309) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: acc
+			(310) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(311) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(312) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(313) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '5more', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+			(314) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '2', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(315) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(316) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(317) Attributes: {'buying': 'vhigh', 'maint': 'low', 'doors': '3', 'persons': '4', 'lug_boot': 'small', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(318) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: acc,
+Predicted class: good
+			(319) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '5more', 'persons': '4', 'lug_boot': 'small', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(320) Attributes: {'buying': 'med', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(321) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(322) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '5more', 'persons': 'more', 'lug_boot': 'small', 'safety': 'high'},
+Real class: good,
+Predicted class: acc
+			(323) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': '4', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: acc
+			(324) Attributes: {'buying': 'high', 'maint': 'low', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(325) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(326) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(327) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(328) Attributes: {'buying': 'low', 'maint': 'med', 'doors': '3', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(329) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '5more', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(330) Attributes: {'buying': 'med', 'maint': 'high', 'doors': '2', 'persons': 'more', 'lug_boot': 'med', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(331) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '2', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(332) Attributes: {'buying': 'high', 'maint': 'med', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(333) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '5more', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(334) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '5more', 'persons': '2', 'lug_boot': 'small', 'safety': 'high'},
+Real class: unacc,
+Predicted class: acc
+			(335) Attributes: {'buying': 'med', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'med', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(336) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(337) Attributes: {'buying': 'high', 'maint': 'high', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(338) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '5more', 'persons': 'more', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(339) Attributes: {'buying': 'low', 'maint': 'low', 'doors': '5more', 'persons': '2', 'lug_boot': 'med', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(340) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '3', 'persons': '4', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(341) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '4', 'lug_boot': 'small', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(342) Attributes: {'buying': 'vhigh', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'low'},
+Real class: unacc,
+Predicted class: unacc
+			(343) Attributes: {'buying': 'low', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: acc,
+Predicted class: acc
+			(344) Attributes: {'buying': 'vhigh', 'maint': 'vhigh', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(345) Attributes: {'buying': 'low', 'maint': 'high', 'doors': '4', 'persons': '2', 'lug_boot': 'big', 'safety': 'med'},
+Real class: unacc,
+Predicted class: unacc
+			(346) Attributes: {'buying': 'high', 'maint': 'vhigh', 'doors': '2', 'persons': 'more', 'lug_boot': 'big', 'safety': 'high'},
+Real class: unacc,
+Predicted class: unacc
+		Test accuracy: 0.795

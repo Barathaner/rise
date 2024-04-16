@@ -1,2 +1,749 @@
 Data set: transfusion
-	 Training model {}
+	 Training model ...
+	
+Rule set:
+			(1) (0.027 <= Recency (months) <= 0.068) && (Frequency (times) == 0.204) && (Monetary (c.c. blood) == 0.204) && (0.76 <= Time (months) <= 0.802) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(2) (0.014 <= Recency (months) <= 0.054) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.573 <= Time (months) <= 0.583) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(3) (0.041 <= Recency (months) <= 0.054) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.5}
+			(4) (0.027 <= Recency (months) <= 0.054) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (Time (months) == 0.25) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.667}
+			(5) (Recency (months) == 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.385 <= Time (months) <= 0.427) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(6) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.448 <= Time (months) <= 0.469) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(7) (Recency (months) == 0.027) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.479 <= Time (months) <= 0.531) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(8) (Recency (months) == 0.216) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (Time (months) == 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(9) (Recency (months) == 0.284) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.219 <= Time (months) <= 0.25) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.833}
+			(10) (0.054 <= Recency (months) <= 0.081) && (Frequency (times) == 0.327) && (Monetary (c.c. blood) == 0.327) && (0.708 <= Time (months) <= 0.719) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.003, accuracy: 0.5}
+			(11) (0.149 <= Recency (months) <= 0.189) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.375 <= Time (months) <= 0.406) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(12) (Recency (months) == 0.027) && (Frequency (times) == 0.204) && (Monetary (c.c. blood) == 0.204) && (0.396 <= Time (months) <= 0.458) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(13) (0.027 <= Recency (months) <= 0.054) && (0.265 <= Frequency (times) <= 0.327) && (0.265 <= Monetary (c.c. blood) <= 0.327) && (0.823 <= Time (months) <= 0.875) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(14) (Recency (months) == 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(15) (0.027 <= Recency (months) <= 0.122) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.146 <= Time (months) <= 0.208) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(16) (0.203 <= Recency (months) <= 0.216) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(17) (0.122 <= Recency (months) <= 0.149) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (Time (months) == 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(18) (0.149 <= Recency (months) <= 0.216) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.708 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(19) (0.014 <= Recency (months) <= 0.027) && (0.245 <= Frequency (times) <= 0.286) && (0.245 <= Monetary (c.c. blood) <= 0.286) && (0.469 <= Time (months) <= 0.49) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(20) (0.0 <= Recency (months) <= 0.027) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.573 <= Time (months) <= 0.594) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(21) (Recency (months) == 0.284) && (0.041 <= Frequency (times) <= 0.082) && (0.041 <= Monetary (c.c. blood) <= 0.082) && (0.604 <= Time (months) <= 0.708) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(22) (Recency (months) == 0.284) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.375 <= Time (months) <= 0.406) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(23) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 1.0}
+			(24) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.012, accuracy: 0.714}
+			(25) (Recency (months) == 0.027) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.073 <= Time (months) <= 0.094) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.012, accuracy: 0.571}
+			(26) (0.284 <= Recency (months) <= 0.311) && (0.02 <= Frequency (times) <= 0.061) && (0.02 <= Monetary (c.c. blood) <= 0.061) && (0.521 <= Time (months) <= 0.531) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(27) (Recency (months) == 0.027) && (Frequency (times) == 0.204) && (Monetary (c.c. blood) == 0.204) && (0.219 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(28) (0.027 <= Recency (months) <= 0.054) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.333 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(29) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(30) (0.027 <= Recency (months) <= 0.068) && (0.816 <= Frequency (times) <= 0.918) && (0.816 <= Monetary (c.c. blood) <= 0.918) && (Time (months) == 1.0) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(31) (0.054 <= Recency (months) <= 0.095) && (0.082 <= Frequency (times) <= 0.122) && (0.082 <= Monetary (c.c. blood) <= 0.122) && (Time (months) == 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(32) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.333 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(33) (0.149 <= Recency (months) <= 0.216) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.573 <= Time (months) <= 0.604) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(34) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.25 <= Time (months) <= 0.281) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(35) (Recency (months) == 0.149) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.26 <= Time (months) <= 0.281) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(36) (0.311 <= Recency (months) <= 0.351) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.49 <= Time (months) <= 0.531) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(37) (0.054 <= Recency (months) <= 0.068) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(38) (0.176 <= Recency (months) <= 0.189) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (Time (months) == 0.25) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(39) (Recency (months) == 0.027) && (0.816 <= Frequency (times) <= 0.878) && (0.816 <= Monetary (c.c. blood) <= 0.878) && (0.875 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(40) (0.189 <= Recency (months) <= 0.216) && (0.0 <= Frequency (times) <= 0.02) && (0.0 <= Monetary (c.c. blood) <= 0.02) && (Time (months) == 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.027, accuracy: 1.0}
+			(41) (0.027 <= Recency (months) <= 0.068) && (0.878 <= Frequency (times) <= 1.0) && (0.878 <= Monetary (c.c. blood) <= 1.0) && (Time (months) == 1.0) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(42) (0.027 <= Recency (months) <= 0.054) && (0.082 <= Frequency (times) <= 0.122) && (0.082 <= Monetary (c.c. blood) <= 0.122) && (0.583 <= Time (months) <= 0.635) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.013, accuracy: 0.875}
+			(43) (0.0 <= Recency (months) <= 0.027) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (Time (months) == 0.021) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.017, accuracy: 0.6}
+			(44) (Recency (months) == 0.027) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.177 <= Time (months) <= 0.208) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(45) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(46) (0.216 <= Recency (months) <= 0.284) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.375 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(47) (0.284 <= Recency (months) <= 0.311) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.833}
+			(48) (Recency (months) == 0.149) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.583 <= Time (months) <= 0.615) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(49) (0.0 <= Recency (months) <= 0.027) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.0 <= Time (months) <= 0.021) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.018, accuracy: 0.727}
+			(50) (Recency (months) == 0.027) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.344 <= Time (months) <= 0.406) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(51) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.8}
+			(52) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.018, accuracy: 0.909}
+			(53) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.312 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(54) (0.149 <= Recency (months) <= 0.216) && (0.306 <= Frequency (times) <= 0.347) && (0.306 <= Monetary (c.c. blood) <= 0.347) && (0.781 <= Time (months) <= 0.802) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(55) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.375 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(56) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.375 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(57) (Recency (months) == 0.216) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.771 <= Time (months) <= 0.885) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(58) (0.284 <= Recency (months) <= 0.311) && (0.245 <= Frequency (times) <= 0.306) && (0.245 <= Monetary (c.c. blood) <= 0.306) && (0.573 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(59) (0.027 <= Recency (months) <= 0.054) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (Time (months) == 0.25) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.01, accuracy: 0.333}
+			(60) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.146 <= Time (months) <= 0.167) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.012, accuracy: 0.857}
+			(61) (0.149 <= Recency (months) <= 0.176) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(62) (0.122 <= Recency (months) <= 0.149) && (0.0 <= Frequency (times) <= 0.02) && (0.0 <= Monetary (c.c. blood) <= 0.02) && (0.073 <= Time (months) <= 0.094) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.023, accuracy: 0.857}
+			(63) (Recency (months) == 0.189) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.833}
+			(64) (0.189 <= Recency (months) <= 0.23) && (0.061 <= Frequency (times) <= 0.122) && (0.061 <= Monetary (c.c. blood) <= 0.122) && (0.573 <= Time (months) <= 0.604) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(65) (Recency (months) == 0.054) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (Time (months) == 0.458) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(66) (Recency (months) == 0.054) && (0.143 <= Frequency (times) <= 0.184) && (0.143 <= Monetary (c.c. blood) <= 0.184) && (Time (months) == 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.333}
+			(67) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.018, accuracy: 0.091}
+			(68) (0.189 <= Recency (months) <= 0.216) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(69) (Recency (months) == 0.311) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.646 <= Time (months) <= 0.708) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(70) (Recency (months) == 0.311) && (0.041 <= Frequency (times) <= 0.082) && (0.041 <= Monetary (c.c. blood) <= 0.082) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(71) (Recency (months) == 0.027) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.8}
+			(72) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.5}
+			(73) (0.054 <= Recency (months) <= 0.068) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.24 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(74) (0.284 <= Recency (months) <= 0.311) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (0.448 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(75) (Recency (months) == 0.189) && (0.0 <= Frequency (times) <= 0.02) && (0.0 <= Monetary (c.c. blood) <= 0.02) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.038, accuracy: 0.957}
+			(76) (Recency (months) == 0.027) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.479 <= Time (months) <= 0.531) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(77) (0.149 <= Recency (months) <= 0.189) && (Frequency (times) == 0.143) && (Monetary (c.c. blood) == 0.143) && (0.458 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(78) (Recency (months) == 0.027) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.198 <= Time (months) <= 0.229) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(79) (0.149 <= Recency (months) <= 0.216) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.5 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(80) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.292 <= Time (months) <= 0.323) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(81) (0.122 <= Recency (months) <= 0.149) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.365 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(82) (0.135 <= Recency (months) <= 0.189) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(83) (Recency (months) == 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.385 <= Time (months) <= 0.427) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(84) (0.027 <= Recency (months) <= 0.054) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.708 <= Time (months) <= 0.76) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(85) (Recency (months) == 0.189) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.6}
+			(86) (0.041 <= Recency (months) <= 0.054) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.333 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(87) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.5}
+			(88) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.135 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 1.0}
+			(89) (0.027 <= Recency (months) <= 0.054) && (0.306 <= Frequency (times) <= 0.327) && (0.306 <= Monetary (c.c. blood) <= 0.327) && (0.646 <= Time (months) <= 0.719) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(90) (0.149 <= Recency (months) <= 0.216) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.844 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(91) (Recency (months) == 0.027) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.073 <= Time (months) <= 0.094) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(92) (Recency (months) == 0.027) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.073 <= Time (months) <= 0.094) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(93) (Recency (months) == 0.054) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.458 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(94) (0.027 <= Recency (months) <= 0.054) && (0.184 <= Frequency (times) <= 0.204) && (0.184 <= Monetary (c.c. blood) <= 0.204) && (0.615 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(95) (0.122 <= Recency (months) <= 0.149) && (0.041 <= Frequency (times) <= 0.082) && (0.041 <= Monetary (c.c. blood) <= 0.082) && (0.333 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(96) (Recency (months) == 0.149) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.375 <= Time (months) <= 0.406) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(97) (0.027 <= Recency (months) <= 0.054) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (Time (months) == 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.5}
+			(98) (Recency (months) == 0.027) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(99) (Recency (months) == 0.189) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.302 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(100) (0.135 <= Recency (months) <= 0.149) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (Time (months) == 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(101) (0.054 <= Recency (months) <= 0.068) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.875 <= Time (months) <= 0.896) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(102) (0.027 <= Recency (months) <= 0.095) && (0.204 <= Frequency (times) <= 0.224) && (0.204 <= Monetary (c.c. blood) <= 0.224) && (0.896 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(103) (0.189 <= Recency (months) <= 0.216) && (0.082 <= Frequency (times) <= 0.122) && (0.082 <= Monetary (c.c. blood) <= 0.122) && (0.719 <= Time (months) <= 0.74) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(104) (0.189 <= Recency (months) <= 0.216) && (0.02 <= Frequency (times) <= 0.061) && (0.02 <= Monetary (c.c. blood) <= 0.061) && (0.198 <= Time (months) <= 0.208) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.75}
+			(105) (0.162 <= Recency (months) <= 0.189) && (0.143 <= Frequency (times) <= 0.204) && (0.143 <= Monetary (c.c. blood) <= 0.204) && (0.219 <= Time (months) <= 0.25) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(106) (Recency (months) == 0.189) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(107) (0.149 <= Recency (months) <= 0.189) && (0.306 <= Frequency (times) <= 0.429) && (0.306 <= Monetary (c.c. blood) <= 0.429) && (0.906 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(108) (Recency (months) == 0.027) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (Time (months) == 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(109) (0.176 <= Recency (months) <= 0.189) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(110) (0.014 <= Recency (months) <= 0.054) && (0.224 <= Frequency (times) <= 0.306) && (0.224 <= Monetary (c.c. blood) <= 0.306) && (0.969 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(111) (Recency (months) == 0.027) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(112) (Recency (months) == 0.027) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.2}
+			(113) (0.027 <= Recency (months) <= 0.054) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (Time (months) == 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.6}
+			(114) (Recency (months) == 0.054) && (0.143 <= Frequency (times) <= 0.184) && (0.143 <= Monetary (c.c. blood) <= 0.184) && (Time (months) == 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.01, accuracy: 0.667}
+			(115) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.396 <= Time (months) <= 0.448) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(116) (0.014 <= Recency (months) <= 0.054) && (0.367 <= Frequency (times) <= 0.469) && (0.367 <= Monetary (c.c. blood) <= 0.469) && (0.698 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.003, accuracy: 0.5}
+			(117) (0.122 <= Recency (months) <= 0.135) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.375 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(118) (0.027 <= Recency (months) <= 0.054) && (0.082 <= Frequency (times) <= 0.122) && (0.082 <= Monetary (c.c. blood) <= 0.122) && (0.75 <= Time (months) <= 0.771) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(119) (0.054 <= Recency (months) <= 0.108) && (0.163 <= Frequency (times) <= 0.204) && (0.163 <= Monetary (c.c. blood) <= 0.204) && (0.635 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(120) (Recency (months) == 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.281 <= Time (months) <= 0.302) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(121) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.015, accuracy: 0.667}
+			(122) (0.189 <= Recency (months) <= 0.216) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.396 <= Time (months) <= 0.406) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(123) (0.189 <= Recency (months) <= 0.216) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (Time (months) == 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(124) (Recency (months) == 0.027) && (0.184 <= Frequency (times) <= 0.204) && (0.184 <= Monetary (c.c. blood) <= 0.204) && (0.458 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(125) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.073 <= Time (months) <= 0.115) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.012, accuracy: 0.714}
+			(126) (0.027 <= Recency (months) <= 0.054) && (0.082 <= Frequency (times) <= 0.122) && (0.082 <= Monetary (c.c. blood) <= 0.122) && (Time (months) == 0.583) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.833}
+			(127) (0.054 <= Recency (months) <= 0.068) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.24 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(128) (0.311 <= Recency (months) <= 0.351) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (0.49 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(129) (0.203 <= Recency (months) <= 0.216) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(130) (Recency (months) == 0.216) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.375 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(131) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.012, accuracy: 0.143}
+			(132) (Recency (months) == 0.311) && (0.02 <= Frequency (times) <= 0.061) && (0.02 <= Monetary (c.c. blood) <= 0.061) && (0.885 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(133) (0.027 <= Recency (months) <= 0.068) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(134) (Recency (months) == 0.095) && (0.163 <= Frequency (times) <= 0.224) && (0.163 <= Monetary (c.c. blood) <= 0.224) && (0.875 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(135) (Recency (months) == 0.216) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.781 <= Time (months) <= 0.885) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(136) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.048, accuracy: 0.103}
+			(137) (Recency (months) == 0.027) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(138) (0.122 <= Recency (months) <= 0.149) && (0.0 <= Frequency (times) <= 0.02) && (0.0 <= Monetary (c.c. blood) <= 0.02) && (Time (months) == 0.094) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.022, accuracy: 0.154}
+			(139) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.458 <= Time (months) <= 0.469) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(140) (0.284 <= Recency (months) <= 0.311) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.375 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(141) (0.054 <= Recency (months) <= 0.149) && (0.367 <= Frequency (times) <= 0.469) && (0.367 <= Monetary (c.c. blood) <= 0.469) && (0.583 <= Time (months) <= 0.698) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(142) (0.149 <= Recency (months) <= 0.189) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.573 <= Time (months) <= 0.594) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(143) (0.189 <= Recency (months) <= 0.216) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.208 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(144) (0.027 <= Recency (months) <= 0.054) && (0.122 <= Frequency (times) <= 0.163) && (0.122 <= Monetary (c.c. blood) <= 0.163) && (0.198 <= Time (months) <= 0.208) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(145) (0.243 <= Recency (months) <= 0.284) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.833}
+			(146) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.163) && (Monetary (c.c. blood) == 0.163) && (0.354 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(147) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.583 <= Time (months) <= 0.625) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(148) (Recency (months) == 0.189) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.25 <= Time (months) <= 0.292) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(149) (0.041 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.104 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 1.0}
+			(150) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.163) && (Monetary (c.c. blood) == 0.163) && (0.354 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(151) (0.216 <= Recency (months) <= 0.311) && (0.224 <= Frequency (times) <= 0.286) && (0.224 <= Monetary (c.c. blood) <= 0.286) && (0.844 <= Time (months) <= 0.885) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(152) (Recency (months) == 0.189) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.25 <= Time (months) <= 0.292) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(153) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.4}
+			(154) (0.041 <= Recency (months) <= 0.054) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.5}
+			(155) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.012, accuracy: 0.286}
+			(156) (0.122 <= Recency (months) <= 0.149) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.146 <= Time (months) <= 0.177) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(157) (0.189 <= Recency (months) <= 0.216) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.4}
+			(158) (Recency (months) == 0.027) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(159) (0.014 <= Recency (months) <= 0.054) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.573 <= Time (months) <= 0.583) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(160) (0.514 <= Recency (months) <= 0.541) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.375 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(161) (Recency (months) == 0.149) && (0.122 <= Frequency (times) <= 0.163) && (0.122 <= Monetary (c.c. blood) <= 0.163) && (0.729 <= Time (months) <= 0.76) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(162) (0.027 <= Recency (months) <= 0.054) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (Time (months) == 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.5}
+			(163) (0.149 <= Recency (months) <= 0.216) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.771 <= Time (months) <= 0.875) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(164) (Recency (months) == 0.284) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.219 <= Time (months) <= 0.25) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.01, accuracy: 0.167}
+			(165) (0.27 <= Recency (months) <= 0.311) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.573 <= Time (months) <= 0.698) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(166) (0.041 <= Recency (months) <= 0.054) && (0.306 <= Frequency (times) <= 0.327) && (0.306 <= Monetary (c.c. blood) <= 0.327) && (0.708 <= Time (months) <= 0.75) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(167) (0.149 <= Recency (months) <= 0.216) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.708 <= Time (months) <= 0.771) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(168) (0.284 <= Recency (months) <= 0.338) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.448 <= Time (months) <= 0.5) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(169) (Recency (months) == 0.027) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.448 <= Time (months) <= 0.469) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(170) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.406 <= Time (months) <= 0.427) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(171) (Recency (months) == 0.054) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(172) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(173) (0.122 <= Recency (months) <= 0.149) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.229 <= Time (months) <= 0.25) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(174) (Recency (months) == 0.189) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.4}
+			(175) (0.095 <= Recency (months) <= 0.122) && (0.163 <= Frequency (times) <= 0.204) && (0.163 <= Monetary (c.c. blood) <= 0.204) && (0.448 <= Time (months) <= 0.49) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(176) (Recency (months) == 0.027) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.448 <= Time (months) <= 0.469) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(177) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.0 <= Time (months) <= 0.021) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.025, accuracy: 0.8}
+			(178) (0.095 <= Recency (months) <= 0.122) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (Time (months) == 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(179) (Recency (months) == 0.216) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(180) (0.014 <= Recency (months) <= 0.054) && (0.306 <= Frequency (times) <= 0.388) && (0.306 <= Monetary (c.c. blood) <= 0.388) && (0.344 <= Time (months) <= 0.448) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(181) (0.189 <= Recency (months) <= 0.216) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.26 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.667}
+			(182) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.094 <= Time (months) <= 0.125) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(183) (Recency (months) == 0.149) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.333 <= Time (months) <= 0.365) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(184) (0.189 <= Recency (months) <= 0.216) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (Time (months) == 0.396) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(185) (0.122 <= Recency (months) <= 0.176) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.5}
+			(186) (0.203 <= Recency (months) <= 0.216) && (0.041 <= Frequency (times) <= 0.082) && (0.041 <= Monetary (c.c. blood) <= 0.082) && (0.323 <= Time (months) <= 0.333) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(187) (Recency (months) == 0.027) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.76 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(188) (0.0 <= Recency (months) <= 0.027) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (Time (months) == 0.021) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.017, accuracy: 0.4}
+			(189) (0.149 <= Recency (months) <= 0.189) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.5 <= Time (months) <= 0.51) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(190) (0.149 <= Recency (months) <= 0.216) && (0.306 <= Frequency (times) <= 0.347) && (0.306 <= Monetary (c.c. blood) <= 0.347) && (0.781 <= Time (months) <= 0.802) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(191) (0.149 <= Recency (months) <= 0.216) && (0.184 <= Frequency (times) <= 0.204) && (0.184 <= Monetary (c.c. blood) <= 0.204) && (0.344 <= Time (months) <= 0.396) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(192) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.208 <= Time (months) <= 0.24) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(193) (Recency (months) == 0.149) && (0.163 <= Frequency (times) <= 0.184) && (0.163 <= Monetary (c.c. blood) <= 0.184) && (0.323 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(194) (0.027 <= Recency (months) <= 0.054) && (0.184 <= Frequency (times) <= 0.204) && (0.184 <= Monetary (c.c. blood) <= 0.204) && (0.615 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(195) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.0 <= Time (months) <= 0.021) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.092, accuracy: 0.745}
+			(196) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.01, accuracy: 0.333}
+			(197) (0.149 <= Recency (months) <= 0.216) && (0.286 <= Frequency (times) <= 0.306) && (0.286 <= Monetary (c.c. blood) <= 0.306) && (0.885 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(198) (Recency (months) == 0.149) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.198 <= Time (months) <= 0.24) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(199) (Recency (months) == 0.189) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.458 <= Time (months) <= 0.5) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.75}
+			(200) (Recency (months) == 0.027) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.073 <= Time (months) <= 0.094) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.012, accuracy: 0.429}
+			(201) (0.027 <= Recency (months) <= 0.054) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (Time (months) == 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.4}
+			(202) (0.014 <= Recency (months) <= 0.027) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.969 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(203) (0.122 <= Recency (months) <= 0.149) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.448 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(204) (0.149 <= Recency (months) <= 0.176) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(205) (0.189 <= Recency (months) <= 0.216) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.6}
+			(206) (0.014 <= Recency (months) <= 0.054) && (0.224 <= Frequency (times) <= 0.245) && (0.224 <= Monetary (c.c. blood) <= 0.245) && (0.333 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(207) (0.149 <= Recency (months) <= 0.162) && (0.163 <= Frequency (times) <= 0.204) && (0.163 <= Monetary (c.c. blood) <= 0.204) && (0.344 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(208) (0.284 <= Recency (months) <= 0.311) && (0.286 <= Frequency (times) <= 0.367) && (0.286 <= Monetary (c.c. blood) <= 0.367) && (0.573 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(209) (0.027 <= Recency (months) <= 0.054) && (0.204 <= Frequency (times) <= 0.224) && (0.204 <= Monetary (c.c. blood) <= 0.224) && (0.969 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(210) (0.284 <= Recency (months) <= 0.311) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.448 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(211) (Recency (months) == 0.189) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(212) (0.041 <= Recency (months) <= 0.054) && (0.224 <= Frequency (times) <= 0.265) && (0.224 <= Monetary (c.c. blood) <= 0.265) && (0.333 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(213) (0.027 <= Recency (months) <= 0.054) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.51 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(214) (0.162 <= Recency (months) <= 0.216) && (0.224 <= Frequency (times) <= 0.245) && (0.224 <= Monetary (c.c. blood) <= 0.245) && (0.5 <= Time (months) <= 0.583) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(215) (0.027 <= Recency (months) <= 0.054) && (0.163 <= Frequency (times) <= 0.184) && (0.163 <= Monetary (c.c. blood) <= 0.184) && (0.323 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(216) (0.054 <= Recency (months) <= 0.095) && (0.204 <= Frequency (times) <= 0.224) && (0.204 <= Monetary (c.c. blood) <= 0.224) && (0.875 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(217) (Recency (months) == 0.027) && (0.122 <= Frequency (times) <= 0.163) && (0.122 <= Monetary (c.c. blood) <= 0.163) && (0.75 <= Time (months) <= 0.771) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(218) (0.027 <= Recency (months) <= 0.054) && (0.163 <= Frequency (times) <= 0.184) && (0.163 <= Monetary (c.c. blood) <= 0.184) && (0.521 <= Time (months) <= 0.552) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(219) (0.0 <= Recency (months) <= 0.054) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (Time (months) == 0.021) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 0.5}
+			(220) (Recency (months) == 0.027) && (0.673 <= Frequency (times) <= 0.857) && (0.673 <= Monetary (c.c. blood) <= 0.857) && (0.781 <= Time (months) <= 1.0) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 1.0}
+			(221) (0.108 <= Recency (months) <= 0.149) && (Frequency (times) == 0.143) && (Monetary (c.c. blood) == 0.143) && (0.479 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(222) (Recency (months) == 0.149) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.583 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(223) (0.027 <= Recency (months) <= 0.041) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.0 <= Time (months) <= 0.01) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.043, accuracy: 0.769}
+			(224) (Recency (months) == 0.216) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.771 <= Time (months) <= 0.885) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(225) (0.149 <= Recency (months) <= 0.216) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.708 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(226) (0.122 <= Recency (months) <= 0.135) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.375 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(227) (0.014 <= Recency (months) <= 0.027) && (0.245 <= Frequency (times) <= 0.265) && (0.245 <= Monetary (c.c. blood) <= 0.265) && (0.531 <= Time (months) <= 0.583) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(228) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (Time (months) == 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(229) (0.122 <= Recency (months) <= 0.149) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.594 <= Time (months) <= 0.656) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(230) (0.027 <= Recency (months) <= 0.068) && (0.816 <= Frequency (times) <= 0.918) && (0.816 <= Monetary (c.c. blood) <= 0.918) && (Time (months) == 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(231) (0.284 <= Recency (months) <= 0.311) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.531 <= Time (months) <= 0.604) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(232) (Recency (months) == 0.284) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 1.0}
+			(233) (0.0 <= Recency (months) <= 0.027) && (0.204 <= Frequency (times) <= 0.245) && (0.204 <= Monetary (c.c. blood) <= 0.245) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(234) (0.176 <= Recency (months) <= 0.189) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(235) (0.027 <= Recency (months) <= 0.054) && (0.204 <= Frequency (times) <= 0.224) && (0.204 <= Monetary (c.c. blood) <= 0.224) && (0.792 <= Time (months) <= 0.833) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(236) (0.135 <= Recency (months) <= 0.149) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.365 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(237) (Recency (months) == 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.323 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(238) (0.541 <= Recency (months) <= 1.0) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.396 <= Time (months) <= 0.75) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(239) (Recency (months) == 0.054) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.198 <= Time (months) <= 0.208) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.003, accuracy: 0.5}
+			(240) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.406 <= Time (months) <= 0.458) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(241) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.008, accuracy: 0.6}
+			(242) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.048, accuracy: 0.897}
+			(243) (0.014 <= Recency (months) <= 0.027) && (0.245 <= Frequency (times) <= 0.265) && (0.245 <= Monetary (c.c. blood) <= 0.265) && (0.531 <= Time (months) <= 0.583) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(244) (0.0 <= Recency (months) <= 0.054) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (Time (months) == 0.021) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.5}
+			(245) (Recency (months) == 0.189) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.458 <= Time (months) <= 0.5) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.007, accuracy: 0.25}
+			(246) (Recency (months) == 0.189) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.271 <= Time (months) <= 0.302) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(247) (0.189 <= Recency (months) <= 0.216) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(248) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.115 <= Time (months) <= 0.125) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(249) (Recency (months) == 0.149) && (0.102 <= Frequency (times) <= 0.122) && (0.102 <= Monetary (c.c. blood) <= 0.122) && (0.583 <= Time (months) <= 0.646) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(250) (Recency (months) == 0.311) && (0.041 <= Frequency (times) <= 0.122) && (0.041 <= Monetary (c.c. blood) <= 0.122) && (0.885 <= Time (months) <= 0.906) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(251) (0.162 <= Recency (months) <= 0.189) && (0.224 <= Frequency (times) <= 0.245) && (0.224 <= Monetary (c.c. blood) <= 0.245) && (0.573 <= Time (months) <= 0.594) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(252) (0.041 <= Recency (months) <= 0.054) && (0.061 <= Frequency (times) <= 0.082) && (0.061 <= Monetary (c.c. blood) <= 0.082) && (0.25 <= Time (months) <= 0.281) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.008, accuracy: 0.6}
+			(253) (Recency (months) == 0.054) && (0.143 <= Frequency (times) <= 0.163) && (0.143 <= Monetary (c.c. blood) <= 0.163) && (0.458 <= Time (months) <= 0.479) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(254) (0.054 <= Recency (months) <= 0.081) && (0.327 <= Frequency (times) <= 0.367) && (0.327 <= Monetary (c.c. blood) <= 0.367) && (0.698 <= Time (months) <= 0.719) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(255) (0.122 <= Recency (months) <= 0.149) && (0.02 <= Frequency (times) <= 0.061) && (0.02 <= Monetary (c.c. blood) <= 0.061) && (0.656 <= Time (months) <= 0.771) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(256) (Recency (months) == 0.149) && (0.122 <= Frequency (times) <= 0.163) && (0.122 <= Monetary (c.c. blood) <= 0.163) && (0.729 <= Time (months) <= 0.76) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(257) (Recency (months) == 0.149) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(258) (Recency (months) == 0.149) && (0.02 <= Frequency (times) <= 0.061) && (0.02 <= Monetary (c.c. blood) <= 0.061) && (0.24 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(259) (0.311 <= Recency (months) <= 0.351) && (0.061 <= Frequency (times) <= 0.102) && (0.061 <= Monetary (c.c. blood) <= 0.102) && (0.49 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(260) (0.054 <= Recency (months) <= 0.095) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.333 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(261) (0.149 <= Recency (months) <= 0.216) && (0.184 <= Frequency (times) <= 0.224) && (0.184 <= Monetary (c.c. blood) <= 0.224) && (0.583 <= Time (months) <= 0.625) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(262) (0.135 <= Recency (months) <= 0.149) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (Time (months) == 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(263) (0.027 <= Recency (months) <= 0.311) && (0.755 <= Frequency (times) <= 0.878) && (0.755 <= Monetary (c.c. blood) <= 0.878) && (Time (months) == 1.0) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(264) (0.014 <= Recency (months) <= 0.054) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.344 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(265) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.719 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(266) (0.095 <= Recency (months) <= 0.122) && (0.163 <= Frequency (times) <= 0.204) && (0.163 <= Monetary (c.c. blood) <= 0.204) && (0.448 <= Time (months) <= 0.49) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(267) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.323 <= Time (months) <= 0.333) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(268) (0.189 <= Recency (months) <= 0.216) && (0.122 <= Frequency (times) <= 0.143) && (0.122 <= Monetary (c.c. blood) <= 0.143) && (0.729 <= Time (months) <= 0.771) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(269) (0.027 <= Recency (months) <= 0.054) && (0.041 <= Frequency (times) <= 0.061) && (0.041 <= Monetary (c.c. blood) <= 0.061) && (0.333 <= Time (months) <= 0.344) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(270) (0.149 <= Recency (months) <= 0.162) && (0.224 <= Frequency (times) <= 0.245) && (0.224 <= Monetary (c.c. blood) <= 0.245) && (0.583 <= Time (months) <= 0.594) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(271) (0.027 <= Recency (months) <= 0.054) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (0.51 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(272) (0.149 <= Recency (months) <= 0.189) && (Frequency (times) == 0.122) && (Monetary (c.c. blood) == 0.122) && (0.729 <= Time (months) <= 0.76) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(273) (0.095 <= Recency (months) <= 0.122) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (Time (months) == 0.146) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(274) (0.014 <= Recency (months) <= 0.054) && (0.224 <= Frequency (times) <= 0.245) && (0.224 <= Monetary (c.c. blood) <= 0.245) && (0.333 <= Time (months) <= 0.385) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(275) (0.054 <= Recency (months) <= 0.081) && (0.306 <= Frequency (times) <= 0.327) && (0.306 <= Monetary (c.c. blood) <= 0.327) && (0.708 <= Time (months) <= 0.719) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.667}
+			(276) (0.014 <= Recency (months) <= 0.027) && (0.245 <= Frequency (times) <= 0.286) && (0.245 <= Monetary (c.c. blood) <= 0.286) && (0.469 <= Time (months) <= 0.49) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.333}
+			(277) (0.054 <= Recency (months) <= 0.081) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.094 <= Time (months) <= 0.125) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(278) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.041) && (Monetary (c.c. blood) == 0.041) && (0.719 <= Time (months) <= 0.781) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(279) (Recency (months) == 0.149) && (Frequency (times) == 0.102) && (Monetary (c.c. blood) == 0.102) && (0.25 <= Time (months) <= 0.271) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(280) (Recency (months) == 0.149) && (0.102 <= Frequency (times) <= 0.143) && (0.102 <= Monetary (c.c. blood) <= 0.143) && (0.719 <= Time (months) <= 0.76) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(281) (0.027 <= Recency (months) <= 0.068) && (Frequency (times) == 0.204) && (Monetary (c.c. blood) == 0.204) && (0.76 <= Time (months) <= 0.802) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.005, accuracy: 0.333}
+			(282) (0.122 <= Recency (months) <= 0.149) && (0.0 <= Frequency (times) <= 0.02) && (0.0 <= Monetary (c.c. blood) <= 0.02) && (Time (months) == 0.094) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.022, accuracy: 0.846}
+			(283) (0.135 <= Recency (months) <= 0.149) && (Frequency (times) == 0.082) && (Monetary (c.c. blood) == 0.082) && (0.365 <= Time (months) <= 0.375) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(284) (0.122 <= Recency (months) <= 0.149) && (0.02 <= Frequency (times) <= 0.041) && (0.02 <= Monetary (c.c. blood) <= 0.041) && (Time (months) == 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(285) (0.27 <= Recency (months) <= 0.311) && (0.265 <= Frequency (times) <= 0.306) && (0.265 <= Monetary (c.c. blood) <= 0.306) && (0.573 <= Time (months) <= 0.698) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 0.667}
+			(286) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.0) && (Monetary (c.c. blood) == 0.0) && (0.0 <= Time (months) <= 0.021) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.092, accuracy: 0.255}
+			(287) (0.189 <= Recency (months) <= 0.216) && (0.082 <= Frequency (times) <= 0.102) && (0.082 <= Monetary (c.c. blood) <= 0.102) && (0.5 <= Time (months) <= 0.51) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(288) (0.014 <= Recency (months) <= 0.027) && (0.163 <= Frequency (times) <= 0.184) && (0.163 <= Monetary (c.c. blood) <= 0.184) && (0.49 <= Time (months) <= 0.521) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(289) (0.027 <= Recency (months) <= 0.041) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.208 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.005, accuracy: 1.0}
+			(290) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.061) && (Monetary (c.c. blood) == 0.061) && (0.125 <= Time (months) <= 0.146) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.015, accuracy: 0.333}
+			(291) (0.284 <= Recency (months) <= 0.311) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.198 <= Time (months) <= 0.219) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.012, accuracy: 0.857}
+			(292) (0.122 <= Recency (months) <= 0.149) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.094 <= Time (months) <= 0.125) => (whether he/she donated blood in March 2007 == 0.0)	{coverage: 0.007, accuracy: 1.0}
+			(293) (0.027 <= Recency (months) <= 0.054) && (Frequency (times) == 0.02) && (Monetary (c.c. blood) == 0.02) && (0.0 <= Time (months) <= 0.021) => (whether he/she donated blood in March 2007 == 1.0)	{coverage: 0.025, accuracy: 0.2}
+		Test instances with assigned classes:
+			(1) Attributes: {'Recency (months)': 0.122, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.073},
+Real class: 0.0,
+Predicted class: 0.0
+			(2) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(3) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.583},
+Real class: 0.0,
+Predicted class: 0.0
+			(4) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.646},
+Real class: 0.0,
+Predicted class: 0.0
+			(5) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.135},
+Real class: 0.0,
+Predicted class: 1.0
+			(6) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(7) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(8) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.021},
+Real class: 1.0,
+Predicted class: 1.0
+			(9) Attributes: {'Recency (months)': 0.243, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.969},
+Real class: 0.0,
+Predicted class: 0.0
+			(10) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.271},
+Real class: 1.0,
+Predicted class: 0.0
+			(11) Attributes: {'Recency (months)': 0.108, 'Frequency (times)': 0.286, 'Monetary (c.c. blood)': 0.286, 'Time (months)': 0.781},
+Real class: 0.0,
+Predicted class: 0.0
+			(12) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.094},
+Real class: 1.0,
+Predicted class: 1.0
+			(13) Attributes: {'Recency (months)': 0.095, 'Frequency (times)': 0.265, 'Monetary (c.c. blood)': 0.265, 'Time (months)': 0.479},
+Real class: 0.0,
+Predicted class: 0.0
+			(14) Attributes: {'Recency (months)': 0.041, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 1.0
+			(15) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.125},
+Real class: 1.0,
+Predicted class: 0.0
+			(16) Attributes: {'Recency (months)': 0.514, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.375},
+Real class: 0.0,
+Predicted class: 0.0
+			(17) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(18) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(19) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.271},
+Real class: 0.0,
+Predicted class: 0.0
+			(20) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(21) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 1.0
+			(22) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 0.0
+			(23) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.184, 'Monetary (c.c. blood)': 0.184, 'Time (months)': 0.271},
+Real class: 1.0,
+Predicted class: 1.0
+			(24) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.625},
+Real class: 0.0,
+Predicted class: 0.0
+			(25) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.224, 'Monetary (c.c. blood)': 0.224, 'Time (months)': 0.469},
+Real class: 1.0,
+Predicted class: 1.0
+			(26) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.229},
+Real class: 0.0,
+Predicted class: 1.0
+			(27) Attributes: {'Recency (months)': 0.108, 'Frequency (times)': 0.163, 'Monetary (c.c. blood)': 0.163, 'Time (months)': 0.583},
+Real class: 0.0,
+Predicted class: 0.0
+			(28) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.146},
+Real class: 1.0,
+Predicted class: 0.0
+			(29) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(30) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.406},
+Real class: 0.0,
+Predicted class: 0.0
+			(31) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.344},
+Real class: 0.0,
+Predicted class: 0.0
+			(32) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.448},
+Real class: 0.0,
+Predicted class: 1.0
+			(33) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.365},
+Real class: 0.0,
+Predicted class: 1.0
+			(34) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.265, 'Monetary (c.c. blood)': 0.265, 'Time (months)': 0.948},
+Real class: 0.0,
+Predicted class: 0.0
+			(35) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.198},
+Real class: 0.0,
+Predicted class: 1.0
+			(36) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(37) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(38) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.458},
+Real class: 0.0,
+Predicted class: 0.0
+			(39) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.245, 'Monetary (c.c. blood)': 0.245, 'Time (months)': 0.312},
+Real class: 1.0,
+Predicted class: 1.0
+			(40) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(41) Attributes: {'Recency (months)': 0.068, 'Frequency (times)': 0.469, 'Monetary (c.c. blood)': 0.469, 'Time (months)': 0.802},
+Real class: 0.0,
+Predicted class: 0.0
+			(42) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(43) Attributes: {'Recency (months)': 0.162, 'Frequency (times)': 0.286, 'Monetary (c.c. blood)': 0.286, 'Time (months)': 0.719},
+Real class: 0.0,
+Predicted class: 0.0
+			(44) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.224, 'Monetary (c.c. blood)': 0.224, 'Time (months)': 0.708},
+Real class: 1.0,
+Predicted class: 1.0
+			(45) Attributes: {'Recency (months)': 0.122, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.51},
+Real class: 1.0,
+Predicted class: 0.0
+			(46) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.406},
+Real class: 1.0,
+Predicted class: 0.0
+			(47) Attributes: {'Recency (months)': 0.284, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.375},
+Real class: 0.0,
+Predicted class: 0.0
+			(48) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(49) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.388, 'Monetary (c.c. blood)': 0.388, 'Time (months)': 0.698},
+Real class: 1.0,
+Predicted class: 0.0
+			(50) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.75},
+Real class: 0.0,
+Predicted class: 0.0
+			(51) Attributes: {'Recency (months)': 0.122, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.073},
+Real class: 0.0,
+Predicted class: 0.0
+			(52) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.427},
+Real class: 1.0,
+Predicted class: 0.0
+			(53) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.125},
+Real class: 0.0,
+Predicted class: 0.0
+			(54) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.146},
+Real class: 1.0,
+Predicted class: 0.0
+			(55) Attributes: {'Recency (months)': 0.284, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.875},
+Real class: 0.0,
+Predicted class: 0.0
+			(56) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.75},
+Real class: 0.0,
+Predicted class: 0.0
+			(57) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.333},
+Real class: 0.0,
+Predicted class: 1.0
+			(58) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(59) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 1.0,
+Predicted class: 1.0
+			(60) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 0.0
+			(61) Attributes: {'Recency (months)': 0.284, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.521},
+Real class: 0.0,
+Predicted class: 0.0
+			(62) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.125},
+Real class: 0.0,
+Predicted class: 1.0
+			(63) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.125},
+Real class: 0.0,
+Predicted class: 0.0
+			(64) Attributes: {'Recency (months)': 0.081, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 1.0
+			(65) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.594},
+Real class: 0.0,
+Predicted class: 1.0
+			(66) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.156},
+Real class: 0.0,
+Predicted class: 1.0
+			(67) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.021},
+Real class: 1.0,
+Predicted class: 0.0
+			(68) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.271},
+Real class: 0.0,
+Predicted class: 0.0
+			(69) Attributes: {'Recency (months)': 0.473, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.646},
+Real class: 0.0,
+Predicted class: 0.0
+			(70) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.281},
+Real class: 0.0,
+Predicted class: 0.0
+			(71) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.021},
+Real class: 1.0,
+Predicted class: 1.0
+			(72) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.083},
+Real class: 1.0,
+Predicted class: 0.0
+			(73) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.25},
+Real class: 1.0,
+Predicted class: 1.0
+			(74) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 0.0
+			(75) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.653, 'Monetary (c.c. blood)': 0.653, 'Time (months)': 1.0},
+Real class: 1.0,
+Predicted class: 1.0
+			(76) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.265, 'Monetary (c.c. blood)': 0.265, 'Time (months)': 0.396},
+Real class: 0.0,
+Predicted class: 0.0
+			(77) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.833},
+Real class: 0.0,
+Predicted class: 0.0
+			(78) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(79) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 0.0
+			(80) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.292},
+Real class: 0.0,
+Predicted class: 0.0
+			(81) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.184, 'Monetary (c.c. blood)': 0.184, 'Time (months)': 0.906},
+Real class: 0.0,
+Predicted class: 0.0
+			(82) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 1.0
+			(83) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.271},
+Real class: 0.0,
+Predicted class: 1.0
+			(84) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(85) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.177},
+Real class: 1.0,
+Predicted class: 1.0
+			(86) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(87) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 0.0
+			(88) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.646},
+Real class: 0.0,
+Predicted class: 1.0
+			(89) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.802},
+Real class: 0.0,
+Predicted class: 0.0
+			(90) Attributes: {'Recency (months)': 0.122, 'Frequency (times)': 0.163, 'Monetary (c.c. blood)': 0.163, 'Time (months)': 0.542},
+Real class: 0.0,
+Predicted class: 1.0
+			(91) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 0.0
+			(92) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.396},
+Real class: 1.0,
+Predicted class: 0.0
+			(93) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.163, 'Monetary (c.c. blood)': 0.163, 'Time (months)': 0.25},
+Real class: 1.0,
+Predicted class: 1.0
+			(94) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.396},
+Real class: 0.0,
+Predicted class: 0.0
+			(95) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 0.0
+			(96) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.458},
+Real class: 0.0,
+Predicted class: 1.0
+			(97) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.948},
+Real class: 0.0,
+Predicted class: 0.0
+			(98) Attributes: {'Recency (months)': 0.162, 'Frequency (times)': 0.163, 'Monetary (c.c. blood)': 0.163, 'Time (months)': 0.604},
+Real class: 0.0,
+Predicted class: 0.0
+			(99) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(100) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 1.0
+			(101) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.021},
+Real class: 1.0,
+Predicted class: 1.0
+			(102) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(103) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.333},
+Real class: 1.0,
+Predicted class: 0.0
+			(104) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.208},
+Real class: 0.0,
+Predicted class: 0.0
+			(105) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 0.0
+			(106) Attributes: {'Recency (months)': 0.203, 'Frequency (times)': 0.306, 'Monetary (c.c. blood)': 0.306, 'Time (months)': 0.833},
+Real class: 0.0,
+Predicted class: 0.0
+			(107) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.245, 'Monetary (c.c. blood)': 0.245, 'Time (months)': 0.771},
+Real class: 1.0,
+Predicted class: 0.0
+			(108) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(109) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.406},
+Real class: 0.0,
+Predicted class: 0.0
+			(110) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(111) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.333},
+Real class: 0.0,
+Predicted class: 0.0
+			(112) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.204, 'Monetary (c.c. blood)': 0.204, 'Time (months)': 0.458},
+Real class: 1.0,
+Predicted class: 1.0
+			(113) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.271},
+Real class: 0.0,
+Predicted class: 1.0
+			(114) Attributes: {'Recency (months)': 0.041, 'Frequency (times)': 0.408, 'Monetary (c.c. blood)': 0.408, 'Time (months)': 0.417},
+Real class: 1.0,
+Predicted class: 1.0
+			(115) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.094},
+Real class: 0.0,
+Predicted class: 1.0
+			(116) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.646},
+Real class: 0.0,
+Predicted class: 0.0
+			(117) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.177},
+Real class: 0.0,
+Predicted class: 1.0
+			(118) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(119) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.583},
+Real class: 0.0,
+Predicted class: 0.0
+			(120) Attributes: {'Recency (months)': 0.081, 'Frequency (times)': 0.429, 'Monetary (c.c. blood)': 0.429, 'Time (months)': 0.271},
+Real class: 1.0,
+Predicted class: 1.0
+			(121) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.323},
+Real class: 0.0,
+Predicted class: 0.0
+			(122) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.102, 'Monetary (c.c. blood)': 0.102, 'Time (months)': 0.375},
+Real class: 1.0,
+Predicted class: 1.0
+			(123) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.219},
+Real class: 0.0,
+Predicted class: 0.0
+			(124) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(125) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.125},
+Real class: 0.0,
+Predicted class: 0.0
+			(126) Attributes: {'Recency (months)': 0.0, 'Frequency (times)': 0.51, 'Monetary (c.c. blood)': 0.51, 'Time (months)': 0.771},
+Real class: 1.0,
+Predicted class: 0.0
+			(127) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.204, 'Monetary (c.c. blood)': 0.204, 'Time (months)': 0.375},
+Real class: 0.0,
+Predicted class: 0.0
+			(128) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.204, 'Monetary (c.c. blood)': 0.204, 'Time (months)': 0.271},
+Real class: 0.0,
+Predicted class: 0.0
+			(129) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.083},
+Real class: 0.0,
+Predicted class: 0.0
+			(130) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.286, 'Monetary (c.c. blood)': 0.286, 'Time (months)': 0.646},
+Real class: 0.0,
+Predicted class: 0.0
+			(131) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(132) Attributes: {'Recency (months)': 0.284, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.198},
+Real class: 0.0,
+Predicted class: 0.0
+			(133) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.771},
+Real class: 0.0,
+Predicted class: 0.0
+			(134) Attributes: {'Recency (months)': 0.014, 'Frequency (times)': 0.184, 'Monetary (c.c. blood)': 0.184, 'Time (months)': 0.427},
+Real class: 1.0,
+Predicted class: 1.0
+			(135) Attributes: {'Recency (months)': 0.081, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.125},
+Real class: 0.0,
+Predicted class: 1.0
+			(136) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.082, 'Monetary (c.c. blood)': 0.082, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 1.0
+			(137) Attributes: {'Recency (months)': 0.284, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.24},
+Real class: 0.0,
+Predicted class: 0.0
+			(138) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.0},
+Real class: 0.0,
+Predicted class: 1.0
+			(139) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.479},
+Real class: 0.0,
+Predicted class: 0.0
+			(140) Attributes: {'Recency (months)': 0.041, 'Frequency (times)': 0.143, 'Monetary (c.c. blood)': 0.143, 'Time (months)': 0.5},
+Real class: 0.0,
+Predicted class: 0.0
+			(141) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.021},
+Real class: 0.0,
+Predicted class: 1.0
+			(142) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.094},
+Real class: 1.0,
+Predicted class: 0.0
+			(143) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.073},
+Real class: 1.0,
+Predicted class: 0.0
+			(144) Attributes: {'Recency (months)': 0.149, 'Frequency (times)': 0.204, 'Monetary (c.c. blood)': 0.204, 'Time (months)': 0.417},
+Real class: 0.0,
+Predicted class: 0.0
+			(145) Attributes: {'Recency (months)': 0.027, 'Frequency (times)': 0.408, 'Monetary (c.c. blood)': 0.408, 'Time (months)': 0.521},
+Real class: 1.0,
+Predicted class: 0.0
+			(146) Attributes: {'Recency (months)': 0.189, 'Frequency (times)': 0.041, 'Monetary (c.c. blood)': 0.041, 'Time (months)': 0.344},
+Real class: 0.0,
+Predicted class: 0.0
+			(147) Attributes: {'Recency (months)': 0.216, 'Frequency (times)': 0.0, 'Monetary (c.c. blood)': 0.0, 'Time (months)': 0.146},
+Real class: 0.0,
+Predicted class: 0.0
+			(148) Attributes: {'Recency (months)': 0.176, 'Frequency (times)': 0.122, 'Monetary (c.c. blood)': 0.122, 'Time (months)': 0.771},
+Real class: 0.0,
+Predicted class: 0.0
+			(149) Attributes: {'Recency (months)': 0.054, 'Frequency (times)': 0.061, 'Monetary (c.c. blood)': 0.061, 'Time (months)': 0.125},
+Real class: 1.0,
+Predicted class: 1.0
+			(150) Attributes: {'Recency (months)': 0.311, 'Frequency (times)': 0.02, 'Monetary (c.c. blood)': 0.02, 'Time (months)': 0.25},
+Real class: 0.0,
+Predicted class: 0.0
+		Test accuracy: 0.607
